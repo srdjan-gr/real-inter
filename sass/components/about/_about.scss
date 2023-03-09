@@ -1,0 +1,57 @@
+.about__hero{
+
+    img{
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2{
+        position: absolute;
+        top: 50%;
+        // transform: translateY(-50%);
+        right: 20%;
+        font-weight: 800;
+        font-size: 100px;
+        color: $text-light;
+    }
+}
+
+
+.about__midsection{
+
+    width: 100%;
+    padding: 100px;
+    color: $text-light;
+
+    .about-desc{
+        width: 40%;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: rgba(237, 237, 237, 0.08);;
+        border-radius: 30px;
+    }
+
+    .customers{
+        @include flex(column, center, space-around, 0px);
+
+        width: 100%;
+        padding-top: 100px;
+
+        h2{
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        &-img{
+
+            margin-top: 60px;
+
+            img{
+                height: 70px;
+                margin: 0 20px;
+                opacity: .5;
+            }
+        }
+    }
+}

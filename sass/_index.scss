@@ -47,6 +47,12 @@ a{
     background-size: cover;
 }
 
+.bg-image-dark{
+    background-image: url(../../../img/bg-dark.png);
+    background-color: rgba(217, 217, 217, 0.1);
+    background-size: cover;
+}
+
 .nav-light{
     background-color: $background-light; 
     color: $background;  
