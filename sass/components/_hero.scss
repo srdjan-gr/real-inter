@@ -1,0 +1,39 @@
+.hero{
+    width: 100%;
+    position: relative;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.3;
+    }
+
+    .hero__text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 100px;
+        left: 380px;
+        max-width: 750px;
+
+        h1{
+            font-size: 52px;
+            font-weight: 800;
+        }
+
+        p{
+            margin: 10px 0 20px 0;
+        }
+    }
+}
+
+.hero::after{
+    content: '';
+    width: 85%;
+    height: 120px;
+    background-color: $background;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,38 @@
+nav{
+    @include flex(raw, center, space-between, 0px);
+    height: 60px;
+    padding: 0px 380px;
+    padding: 0px 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .nav__logo{
+        width: 40px;
+        height: 40px;
+
+        img{
+            height: 100%
+        }
+    }
+
+    .nav__links{
+    
+        ul{
+            @include flex(raw, center, center, 0px);
+            .link{
+                margin-left: 30px;
+            }
+
+            .link:hover{
+                cursor: pointer;
+                color: $accent-1;
+            }
+        }
+    }
+
+    .linkActive{
+        color: $accent-1; 
+    }
+}

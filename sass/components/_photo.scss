@@ -1,0 +1,39 @@
+.photo{
+    @include flex(raw, center, space-between, 0px);
+    width: 100%;
+    // margin: 0 auto;
+    padding: 100px;
+    transform: translateY(-50px);
+    position: relative;
+    z-index: 100;
+
+    // img:first-child{
+    //     position: absolute;
+    //     top: 60px;
+    //     right: 0;
+    //     height: 2300px;
+    //     width: 90%;
+    //     opacity: .6;
+    // }
+
+    img{
+        width: 100%;
+        width: 755px;
+        height: 440px;
+    }
+
+    .photo__text{
+        @include flex(column, flex-start, flex-start, 0px);
+        padding: 10px 0 0 50px;
+        height: 440px;
+
+        h2{
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        p{
+            margin: 10px 0 40px 0;
+        }
+    }
+}

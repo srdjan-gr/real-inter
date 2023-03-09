@@ -1,0 +1,18 @@
+.services__hero{
+
+    img{
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2{
+        position: absolute;
+        top: 50%;
+        // transform: translateY(-50%);
+        right: 20%;
+        font-weight: 800;
+        font-size: 100px;
+        color: $text-dark;
+    }
+}

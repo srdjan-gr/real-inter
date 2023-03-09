@@ -1,0 +1,60 @@
+.services{
+    @include flex(column, center, center, 0px);
+    width: 100%;
+
+    h2{
+        margin: 50px;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    &__container {
+        @include flex(raw, center, center, 40px);
+        
+        .carusel-ico{
+            @include flex(raw, center, center, 40px);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 3px solid $accent-1;
+            color: $accent-1;
+            cursor: pointer
+        }
+    
+        &-outer{
+            @include flex(raw, center, center, 40px);
+            margin: 0 auto;
+            background: rgba(237, 237, 237, 0.08);
+            padding: 40px;
+            border-radius: 30px;
+            opacity: .8;
+        }
+    
+        .card{
+            @include flex(column, center, flex-start, 0px);
+            height: 460px;
+            width: 330px;
+            background: rgba(237, 237, 237, 0.08);
+            border-radius: 15px;
+    
+            img{
+                width: 100%;
+                border-radius: 15px 15px 0 0;
+            }
+    
+            &-info{
+                @include flex(column, center, space-between,  0px);
+                padding: 25px;
+                height: 100%;
+                text-align: center;
+    
+                h3{
+                    font-weight: 700;
+                    font-size: 28px;
+                    // margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+}
